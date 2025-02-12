@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: serve-node
+  labels:
+    component: api
+  
+spec:
+  containers:
+    - name: servenode
+      image: saphalpantha/serve-node:latest
+  
+      ports: 
+        - containerPort: 5000
+
