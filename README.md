@@ -58,6 +58,15 @@ kubectl expose pod <pod-name> --type=NodePort --port=80
 
 # Get the Minikube service URL
 minikube service <service-name> --url
+
+# Imperative Update for Deployment with Latest Docker Build
+
+kubectl set image deployment/serve-deployment node=saphalpantha/serve-node:v2
+
 ```
 
+
 Happy Learning! 🚀
+
+
+#
